@@ -70,7 +70,7 @@ nav .navbar-brand span {
 
 .home .carousel-item .container h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .home .carousel-item .container p {
@@ -78,19 +78,64 @@ nav .navbar-brand span {
   font-size: 30px;
 }
 
-.card-text {
-  color: #111;
-  text-decoration: none;
+.slider {
+  max-width: 1100px;
+  display: flex;
 }
-
-.card-text:hover {
-  color: #ff0157;
+.slider .cards {
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
 }
-
-.d-flex .btn-outline-danger {
-  background: transparent;
+.slider .cards .img {
+  height: 200px;
+  width: 100%;
+}
+.slider .cards .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .cards .contents {
+  padding: 10px 20px;
+}
+.cards .contents .titles {
+  font-size: 25px;
+  font-weight: 600;
+}
+.cards .contents .sub-titles {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.cards .contents p {
+  text-align: justify;
+  margin: 10px 0;
+}
+.cards .contents .btn {
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.cards .contents .btn button {
+  background: #ff0157;
   color: #fff;
-  border-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cards .contents .btn button:hover {
+  position: relative;
+  top: 5px;
+  transform: scale(1.1);
+}
+.tab-pane li {
+  margin: 10px 0 10px 0;
 }
 
 .d-flex .btn-outline-danger:hover {
@@ -99,8 +144,8 @@ nav .navbar-brand span {
   border-color: #ff0157;
 }
 
-.d-flex .form-control {
+.d-flex .btn-outline-danger {
   background: transparent;
-  border-color: #fff;
   color: #fff;
+  border-color: #fff;
 }

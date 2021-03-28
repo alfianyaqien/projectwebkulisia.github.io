@@ -21,29 +21,34 @@
       ::-webkit-scrollbar {
         -webkit-appearance: none;
       }
+
       ::-webkit-scrollbar {
         width: 4px;
       }
+
       ::-webkit-scrollbar-track {
         background: #000000;
         border: none;
       }
+
       ::-webkit-scrollbar-thumb {
         background: #ff0157;
         border: none;
         border-radius: 5px;
       }
+
       ::-webkit-scrollbar-thumb:hover {
         background: #c90043;
         transition: all 0.2s ease-in-out;
       }
     </style>
   </head>
+
   <body>
     <!-- Navigasi -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Kulisia<span>.</span></a>
+        <a class="navbar-brand" href="index.html">Kulisia<span>.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,6 +64,10 @@
               <a class="nav-link me-3" href="#contact">Contact</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -117,7 +126,7 @@
             <div class="card">
               <img src="img/Jakarta.jpg" class="card-img-top" alt="Project 1" />
               <div class="card-body">
-                <p class="card-text">Jakarta</p>
+                <a class="card-text" href="deskripsiMakananJakarta.html">Jakarta</a>
               </div>
             </div>
           </div>
@@ -125,7 +134,7 @@
             <div class="card">
               <img src="img/Bandung.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
-                <p class="card-text">Bandung</p>
+                <a class="card-text" href="deskripsiMakananBandung.html">Bandung</a>
               </div>
             </div>
           </div>
@@ -133,7 +142,7 @@
             <div class="card">
               <img src="img/Jogja.jpg" class="card-img-top" alt="Project 3" />
               <div class="card-body">
-                <p class="card-text">Jogja</p>
+                <a class="card-text" href="deskripsiMakananYogyakarta.html">Jogja</a>
               </div>
             </div>
           </div>
@@ -141,7 +150,7 @@
             <div class="card">
               <img src="img/Cirebon.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
-                <p class="card-text">Cirebon</p>
+                <a class="card-text" href="deskripsiMakananCirebon.html">Cirebon</a>
               </div>
             </div>
           </div>
@@ -149,7 +158,7 @@
             <div class="card">
               <img src="img/Palembang.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
-                <p class="card-text">Palembang</p>
+                <a class="card-text" href="deskripsiMakananPalembang.html">Palembang</a>
               </div>
             </div>
           </div>
@@ -157,14 +166,14 @@
             <div class="card">
               <img src="img/Indramayu.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
-                <p class="card-text">Indramayu</p>
+                <a class="card-text" href="deskripsiMakananIndramayu.html">Indramayu</a>
               </div>
             </div>
           </div>
         </div>
         <div class="row text-center mb-3">
           <div class="col">
-            <a href="#">
+            <a href="Category.html">
               <div class="btn btn-outline-danger">show all ></div>
             </a>
           </div>
@@ -194,9 +203,9 @@
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Message</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-outline-danger">Send</button>
+              <button type="submit" class="btn btn-outline-danger" onclick="submitdata()">Send</button>
             </form>
           </div>
         </div>
@@ -222,6 +231,16 @@
           nav.classList.remove("bg-dark", "shadow");
         }
       });
+    </script>
+
+    <script type="text/javascript">
+      function submitdata() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        alert("Halooo\nName: " + name + "\nEmail: " + email + "\nMessage: " + message + "\n\nTerimakasih!!!");
+      }
     </script>
   </body>
 </html>

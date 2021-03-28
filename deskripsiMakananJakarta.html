@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/2021-03-21 16_29_06-Window.png" type="image/x-icon" />
+
+    <!-- Buat manggil library javascript (jquery) di owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- Buat manggil owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Manggil Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Manggil owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <title>Makanan Khas Indonesia</title>
+    <link rel="stylesheet" href="style3.css" />
+
+    <!-- scroll -->
+    <style type="text/css" id="wp-custom-css">
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #000000;
+        border: none;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ff0157;
+        border: none;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c90043;
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Kulisia<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link me-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="Category.html">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <!-- Corousel -->
+    <section class="home" id="home" style="margin-top: 80px">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Nama kategori  -->
+        <div class="row text-center mb-1">
+          <div class="col">
+            <h1 style="font-size: 60px">Jakarta</h1>
+          </div>
+        </div>
+        <!-- Nama kategori  -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url(img/jakarta1.jpg)">
+            <div class="container">
+              <h2>Kerak Telor</h2>
+              <p>Rp 20000 - Rp 25000</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(img/jakarta2.jpg)">
+            <div class="container">
+              <h2>Rangi</h2>
+              <p>Rp 9000 - Rp 100000</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(img/jakarta3.jpg)">
+            <div class="container">
+              <h2>Nasi Kebuli</h2>
+              <p>Rp 50000 - Rp 75000</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Akhir Carousel dan Navigasi -->
+    <!-- Navigation bar untuk deskripsi kategori -->
+    <section class="kategori">
+      <div class="container">
+        <h3 class="mt-3 mb-3">Deskripsi</h3>
+        <nav>
+          <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+            <button class="nav-link active ms-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Definisi</button>
+            <button class="nav-link ms-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sejarah</button>
+            <button class="nav-link ms-3" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Resep Makanan</button>
+          </div>
+        </nav>
+        <div class="tab-content ms-3 me-5" style="text-align: justify" id="nav-tabContent">
+          <div class="tab-pane fade show active me-5" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <q>Kota Terpadat,</q> itulah istilah yang diberikan kepada kota Jakarta. Daerah Khusus Ibukota Jakarta (DKI Jakarta) adalah ibu kota negara dan kota terbesar di Indonesia. Jakarta merupakan satu-satunya kota di Indonesia yang
+            memiliki status setingkat provinsi. Jakarta terletak di pesisir bagian barat laut Pulau Jawa. Dahulu pernah dikenal dengan beberapa nama di antaranya Sunda Kelapa, Jayakarta, dan Batavia. Di dunia internasional Jakarta juga
+            mempunyai julukan J-Town, atau lebih populer lagi The Big Durian karena dianggap kota yang sebanding New York City (Big Apple) di Indonesia. <br /><br />Jakarta memiliki luas sekitar 661,52 km² (lautan: 6.977,5 km²), dengan
+            penduduk berjumlah 10.187.595 jiwa (2011). Wilayah metropolitan Jakarta (Jabodetabek) yang berpenduduk sekitar 28 juta jiwa, merupakan metropolitan terbesar di Asia Tenggara atau urutan kedua di dunia. <br /><br />Sebagai pusat
+            bisnis, politik, dan kebudayaan, Jakarta merupakan tempat berdirinya kantor-kantor pusat BUMN, perusahaan swasta, dan perusahaan asing. Kota ini juga menjadi tempat kedudukan lembaga-lembaga pemerintahan dan kantor sekretariat
+            ASEAN. Jakarta dilayani oleh dua bandar udara, yakni Bandara Soekarno–Hatta dan Bandara Halim Perdanakusuma, serta tiga pelabuhan laut di Tanjung Priok, Sunda Kelapa, dan Ancol.
+          </div>
+          <div class="tab-pane fade ms-3 me-5" style="text-align: justify" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            Pemerintah Kota Administrasi Jakarta Pusat merupakan salah satu dari 5 (lima) wilayah Kota Administrasi dan 1 (satu) Kabupaten Administrasi Kepulauan Seribu yang ada di Provinsi DKI Jakarta.
+            <br /><br />Sesuai Pasal 4 Undang-undang Nomor 29 Tahun 2009 tentang Pemerintahan Provinsi DKI Jakarta sebagai Ibukota Negara Kesatuan Republik Indonesia menyebutkan Provinsi DKI Jakarta adalah Daerah Khusus yang berfungsi
+            sebagai Ibukota Negara Kesatuan Republik Indonesia dan sekaligus sebagai daerah otonom pada tingkat Provinsi, dan pada pasal 13 ayat (1) disebutkan Perangkat Daerah Provinsi DKI Jakarta terdiri atas Sekretariat Daerah,
+            Sekretariat DPRD, Dinas Daerah, Lembaga Teknis Daerah, Kota Administrasi/Kabupaten Administrasi, Kecamatan dan Kelurahan. <br /><br />Dari ketentuan di atas dapat disimpulkan, bahwa Pemerintah Kota Administrasi Jakarta Pusat
+            merupakan perangkat Pemerintah Provinsi DKI Jakarta yang dipimpin oleh Walikota, bertanggung jawab kepada Gubernur melalui Sekretaris Daerah, dengan tugas melaksanakan tugas umum pemerintahan dan melaksanakan sebagaian tugas
+            pemerintahan yang dilimpahkan dari Gubernur.
+          </div>
+          <div class="tab-pane fade ms-3 me-5" style="text-align: justify" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h5>Resep Gudeg</h5>
+            Bahan Serundeng:
+            <ul class="ms-3">
+              <li>200 gr kelapa parut</li>
+              <li>1 bungkus Kobe Bumbu Kalasan (80 gr)</li>
+            </ul>
+            Bahan Kerak Telor :
+            <ul class="ms-3">
+              <li>150 gr nasi putih</li>
+              <li>100 ml air</li>
+              <li>1 bungkus Kobe Tepung Bumbu Putih (75gr)</li>
+              <li>2 butir telur</li>
+              <li>bawang merah goreng secukupnya</li>
+              <li>1 bungkus BonCabe level 10, rasa Original (7,5gr)</li>
+            </ul>
+            Cara membuat Serundeng
+            <h5>Cara Membuat Kerak Telor :</h5>
+            <ol class="ms-3">
+              <li>Sangrai kelapa parut hingga kuning kecoklatan.</li>
+              <li>Masukkan Kobe Bumbu Kalasan. Aduk rata dan masak hingga matang, sisihkan.</li>
+            </ol>
+            <h5>Cara Membuat Kerak Telor :</h5>
+            <ol class="ms-3">
+              <li>Panaskan wajan, tuang nasi yang sudah dicampur dengan air dan 3 sendok makan Kobe Tepung Bumbu Putih.</li>
+              <li>Ratakan hingga tipis sambil dibolak-balik, masak sampai kering.</li>
+              <li>Masukkan telur yang sudah dicampur dengan serundeng. Ratakan di atasnya. Masak hingga matang.</li>
+              <li>Angkat dan beri taburan serundeng, bawang goreng dan Boncabe level 10.</li>
+              <li>Sajikan Kerak Telor selagi hangat.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Navigation bar untuk deskripsi kategori -->
+
+    <!-- Rekomendasi -->
+    <section>
+      <div class="container mt-4">
+        <h3 class="mb-3">Rekomendasi</h3>
+        <div class="slider owl-carousel">
+          <div class="cards">
+            <div class="img">
+              <img src="img/Bandung.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Bandung</div>
+              <div class="sub-title">Jawa Barat</div>
+              <p>
+                Kota Bandung terletak di wilayah Jawa Barat dan merupakan Ibukota Propinsi Daerah Tingkat I Jawa Barat. Kota Bandung terletak diantara 107 0 Bujur Timur dan 6 0 55' Lintang Selatan. Lokasi Kotamadya Bandung cukup strategis,
+                dilihat dari segi komunikasi, perekonomian maupun keamanan.
+              </p>
+              <div class="btn">
+                <a href="deskripsiMakananBandung.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="img">
+              <img src="img/Jogja.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Yogyakarta</div>
+              <div class="sub-title">Jawa Tengah</div>
+              <p>Kota Yogyakarta berkedudukan sebagai ibukota Propinsi DIY dan merupakan satu-satunya daerah tingkat II yang berstatus Kota di samping 4 daerah tingkat II lainnya yang berstatus Kabupaten.</p>
+              <div class="btn">
+                <a href="deskripsiMakananYogyakarta.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="img">
+              <img src="img/Indramayu.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Indramayu</div>
+              <div class="sub-title">Jawa Barat</div>
+              <p>
+                Apabila dilihat dari letak geografisnya Kabupaten Indramayu terletak pada 107° 52 ° - 108° 36 ° Bujur Timur dan 6° 15 ° - 6° 40 ° Lintang Selatan. Sedangkan berdasarkan topografinya sebagian besar merupakan dataran atau
+                daerah landai dengan kemiringan tanahnya rata-rata 0 – 2 %. Keadaan ini berpengaruh terhadap drainase, bila curah hujan cukup tinggi, maka di daerah-daerah tertentu akan terjadi genangan air.
+              </p>
+              <div class="btn">
+                <a href="deskripsiMakananIndramayu.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Rekomendasi -->
+
+    <!-- Footer -->
+    <footer class="shadow-lg mt-5 bg-dark text-center pb-5" style="padding-top: 5em">
+      <p class="text-white">Created with <i class="bi bi-suit-heart-fill" style="color: #ff0157"></i> by <a href="https://github.com/alfianyaqien/projectwebkulisia.github.io" class="text-white fw-bold">Team 5</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+  </body>
+</html>

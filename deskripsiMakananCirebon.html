@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+
+    <link rel="shortcut icon" href="img/2021-03-21 16_29_06-Window.png" type="image/x-icon" />
+
+    <!-- Buat manggil library javascript (jquery) di owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- Buat manggil owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Manggil Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Manggil owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <title>Makanan Khas Indonesia</title>
+    <link rel="stylesheet" href="style3.css" />
+
+    <!-- scroll -->
+    <style type="text/css" id="wp-custom-css">
+      ::-webkit-scrollbar {
+        -webkit-appearance: none;
+      }
+
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #000000;
+        border: none;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ff0157;
+        border: none;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c90043;
+        transition: all 0.2s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Kulisia<span>.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link me-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-3" href="Category.html">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-3" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+
+    <!-- Corousel -->
+    <section class="home" id="home" style="margin-top: 80px">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Nama kategori  -->
+        <div class="row text-center mb-1">
+          <div class="col">
+            <h1 style="font-size: 60px">Cirebon</h1>
+          </div>
+        </div>
+        <!-- Nama kategori  -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url(img/cirebon1.jpg)">
+            <div class="container">
+              <h2>Empal Gentong</h2>
+              <p>Rp 30000 - Rp 50000</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(img/cirebon2.jpg)">
+            <div class="container">
+              <h2>Docang</h2>
+              <p>Rp 10000 - Rp 20000</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(img/cirebon3.jpg)">
+            <div class="container">
+              <h2>Empal Asam</h2>
+              <p>Rp 15000 - Rp 40000</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Akhir Carousel dan Navigasi -->
+    <!-- Navigation bar untuk deskripsi kategori -->
+    <section class="kategori">
+      <div class="container">
+        <h3 class="mt-3 mb-3">Deskripsi</h3>
+        <nav>
+          <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+            <button class="nav-link active ms-3" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Definisi</button>
+            <button class="nav-link ms-3" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sejarah</button>
+            <button class="nav-link ms-3" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Resep Makanan</button>
+          </div>
+        </nav>
+        <div class="tab-content ms-3 me-5" style="text-align: justify" id="nav-tabContent">
+          <div class="tab-pane fade show active me-5" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <q>Kota Budaya dan Sejarah,</q> itulah istilah yang diberikan kepada kota Cirebon, Jawa Barat. Kota Cirebon terletak pada 108º33 Bujur Timur dan 6º41 Lintang Selatan pada pantai Utara Pulau Jawa, bagian timur Jawa Barat,
+            memanjang dari barat ke timur ±11 Km dengan ketinggian dari permukaan laut ±5 M (termasuk dataran rendah). Kota Cirebon dapat ditempuh melalui jalan darat sejauh 130 km dari arah Kota Bandung dan 258 km dari arah Kota Jakarta.
+            <br /><br />Kota Cirebon terletak pada lokasi yang strategis dan menjadi simpul pergerakan transportasi antara Jawa Barat dan Jawa Tengah. Letaknya yang berada di wilayah pantai menjadikan Kota Cirebon memiliki wilayah dataran
+            yang lebih luas dibandingkan dengan wilayah perbukitannya. Luas Kota Cirebon adalah 3.735,82 hektar atau ±37 km2 dengan dominasi penggunaan lahan untuk perumahan (32%) dan tanah pertanian (38%).
+          </div>
+          <div class="tab-pane fade ms-3 me-5" style="text-align: justify" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            Sejarah Cirebon dimulai dari kampung Kebon Pesisir, pada tahun 1445 dipimpin oleh Ki Danusela.
+            <br /><br />Perkampungan itu mengalami perkembangan, selanjutnya muncul perkampungan baru yaitu Caruban Larang dengan pemimpinnya bernama H. Abdullah Iman atau Pangeran Cakrabuwana. <br /><br />Caruban Larang terus berkembang
+            dan pada tahun 1479 sudah disebut sebagai Nagari Cerbon yang dipimpin oleh Tumenggung Syarif Hidayatullah bergelar Susuhunan Jati. Susuhunan Jati meninggal pada tahun 1568 dan digantikan oleh Pangeran Emas yang bergelar
+            Panembahan Ratu. <br /><br />Pada tahun 1649 Pangeran Karim yang bergelar Panembahan Girilaya, menggantikan Panembahan Ratu. Panembahan Girilaya wafat pada tahun 1666, untuk sementara Pangeran Wangsakerta diangkat sebagai
+            Susuhunan Cirebon dengan gelar Panembahan Toh Pati. <br /><br />Tahun 1677 Cirebon terbagi, Pangeran Martawijaya dinobatkan sebagai Sultan Sepuh bergelar Sultan Raja Syamsuddin, Pangeran Kertawijaya sebagai Sultan Anom bergelar
+            Sultan Muhammad Badriddin. Sultan Sepuh menempati Kraton Pakungwati dan Sultan Anom membangun kraton di bekas rumah Pangeran Cakrabuwana. Sedangkan Sultan Cerbon berkedudukan sebagai wakil Sultan Sepuh. Hingga sekarang ini di
+            Cirebon dikenal terdapat tiga sultan yaitu Sultan Sepuh, Sultan Anom, dan Sultan Cirebon. <br /><br />Keberadaan ketiga sultan juga ditandai dengan adanya keraton yaitu Keraton Kasepuhan, Keraton Kanoman, dan Keraton
+            Kacirebonan. Di luar ketiga kesultanan tersebut terdapat satu keraton yang terlepas dari perhatian. Keraton tersebut adalah Keraton Gebang. <br /><br />Menelusuri Cirebon dan kawasan pantai utara Jawa Barat memang akan banyak
+            menjumpai tinggalan yang berkaitan dengan sejarah Cirebon dan Islamisasi Jawa Barat. Beberapa bangunan sudah banyak dikenal masyarakat seperti Keraton Kasepuhan, Kanoman, dan Kacirebonan, Taman Sunyaragi, serta kompleks makam
+            Gunung Sembung dan Gunung Jati.
+          </div>
+          <div class="tab-pane fade ms-3 me-5" style="text-align: justify" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <h5>Resep Pempek</h5>
+            Bahan :
+            <ul class="ms-3">
+              <li>2 lembar daun salam</li>
+              <li>1 batang sereh</li>
+              <li>1 ruas laos</li>
+              <li>3 siung bawang merah</li>
+              <li>3 siung bawang putih</li>
+              <li>1 papan dage (oncom)</li>
+              <li>secukupnya garem</li>
+              <li>1 ikat daun singkong (rebus)</li>
+              <li>1 genggam tauge</li>
+              <li>1 butir kelapa parut</li>
+              <li>secukupnya kerupuk</li>
+              <li>sesuai selera sambel rebus</li>
+            </ul>
+            <h5>Cara membuat Pempek :</h5>
+            <ol class="ms-3">
+              <li>Rebus air plus salam, laos sereh yg sudah di geprek</li>
+              <li>Haluskan bm, bp lalu tumis</li>
+              <li>Tambahkan dage yg sudah direndam dan dihancurkan</li>
+              <li>Campurkan tumisan kedalam panci, tambahkan garam</li>
+              <li>Tata di piring lontong, rebusan daun singkong, toge, kelapa parut dan krupuk lalu siram dgn kuah panas</li>
+              <li>Tambahkan sambel rebus</li>
+              <li>Siap dinikmati</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Navigation bar untuk deskripsi kategori -->
+
+    <!-- Rekomendasi -->
+    <section>
+      <div class="container mt-4">
+        <h3 class="mb-3">Rekomendasi</h3>
+        <div class="slider owl-carousel">
+          <div class="cards">
+            <div class="img">
+              <img src="img/Bandung.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Bandung</div>
+              <div class="sub-title">Jawa Barat</div>
+              <p>
+                Kota Bandung terletak di wilayah Jawa Barat dan merupakan Ibukota Propinsi Daerah Tingkat I Jawa Barat. Kota Bandung terletak diantara 107 0 Bujur Timur dan 6 0 55' Lintang Selatan. Lokasi Kotamadya Bandung cukup strategis,
+                dilihat dari segi komunikasi, perekonomian maupun keamanan.
+              </p>
+              <div class="btn">
+                <a href="deskripsiMakananBandung.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="img">
+              <img src="img/Jogja.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Yogyakarta</div>
+              <div class="sub-title">Jawa Tengah</div>
+              <p>Kota Yogyakarta berkedudukan sebagai ibukota Propinsi DIY dan merupakan satu-satunya daerah tingkat II yang berstatus Kota di samping 4 daerah tingkat II lainnya yang berstatus Kabupaten.</p>
+              <div class="btn">
+                <a href="deskripsiMakananYogyakarta.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="img">
+              <img src="img/Indramayu.jpg" alt="gambar 1" />
+            </div>
+            <div class="contents">
+              <div class="titles">Indramayu</div>
+              <div class="sub-title">Jawa Barat</div>
+              <p>
+                Apabila dilihat dari letak geografisnya Kabupaten Indramayu terletak pada 107° 52 ° - 108° 36 ° Bujur Timur dan 6° 15 ° - 6° 40 ° Lintang Selatan. Sedangkan berdasarkan topografinya sebagian besar merupakan dataran atau
+                daerah landai dengan kemiringan tanahnya rata-rata 0 – 2 %. Keadaan ini berpengaruh terhadap drainase, bila curah hujan cukup tinggi, maka di daerah-daerah tertentu akan terjadi genangan air.
+              </p>
+              <div class="btn">
+                <a href="deskripsiMakananIndramayu.html"><button>Lihat Selengkapnya</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Rekomendasi -->
+
+    <!-- Footer -->
+    <footer class="shadow-lg mt-5 bg-dark text-center pb-5" style="padding-top: 5em">
+      <p class="text-white">Created with <i class="bi bi-suit-heart-fill" style="color: #ff0157"></i> by <a href="https://github.com/alfianyaqien/projectwebkulisia.github.io" class="text-white fw-bold">Team 5</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+  </body>
+</html>
